@@ -1,0 +1,23 @@
+# --- Git Repo Setup --- #
+
+# --- Terminal pt 1. --- # 
+- git init to initialise a new git repository.
+- Create some files to be added to the repository, for example:
+  echo 'print("Hello, world!")' > example.py  # Create a Python file.
+- git add example.py  # Stage the file(s) for commit.
+- git commit -m "First commit"  # Commit the changes with a message.
+- git status  # Check the status of your working directory and staged files.
+- git log  # View the commit history.
+
+# --- GitHub --- #
+- Create a new repository on GitHub by clicking the green "New" button.
+- Name the repository (e.g., `my-repo`).
+- Choose whether you want the repository to be public or private.
+- Do NOT initialise with a README, .gitignore, or license (to avoid merge conflicts with your local repo).
+
+# --- Terminal pt 2 --- #
+- git remote -v  # View the current remotes (none should be listed initially).
+- git remote add origin <YOUR_REPO_URL>  # Link your local repo to the remote on GitHub.
+- git remote -v  # Verify the remote was added (you should see `fetch` and `push` URLs for `origin`).
+- git branch -M main  # Rename the default branch to `main` (if not already named `main`).
+- git push -u origin main  # Push the code to the GitHub repository.
